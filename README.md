@@ -23,9 +23,11 @@ spec:
 
 2. Golang SDK
 ```go annotate
+import wfv1 "github.com/argoproj/argo-workflows/v3/pkg/apis/workflow/v1alpha1"
+
 []wfv1.Template{
 		{
-			Name: workflowUtils.Entrypoint(w.job.Type),
+			Name: "",
 			Steps: []wfv1.ParallelSteps{
 				{
 					Steps: []wfv1.WorkflowStep{
